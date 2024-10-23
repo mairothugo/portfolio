@@ -12,12 +12,12 @@ const PortfolioStylise: React.FC = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-blue-200 to-purple-200 p-8">
+    <div className="w-full min-h-screen bg-gradient-to-br from-green-100 to-green-200 p-8">
       <h1 className="text-5xl font-bold text-center mb-12 text-gray-800">Portfolio de MAIROT Hugo</h1>
       
       <div className="flex flex-col md:flex-row gap-8">
         {/* Cadre d'informations à gauche */}
-        <div className="md:w-1/3 bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+        <div className="md:w-1/3 bg-green-200 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-2xl font-semibold mb-4 text-blue-600">À propos de moi</h2>
           <ul className="space-y-3 text-gray-700">
             <li className="flex items-center"><span className="mr-2">🎂</span>25 ans</li>
@@ -31,7 +31,7 @@ const PortfolioStylise: React.FC = () => {
         {/* Projets à droite */}
         <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
           {projets.map((projet, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 hover:scale-105 hover:bg-blue-50">
+            <div key={index} className="bg-green-200 rounded-lg shadow-lg p-6 transition-all duration-300 hover:scale-105 hover:bg-green-300">
               <h3 className="text-lg font-semibold mb-2 text-blue-600">Projet {index + 1}</h3>
               <p className="font-medium">{projet.titre}</p>
               <p className="text-sm text-gray-600 mt-2">{projet.description}</p>
